@@ -1,0 +1,33 @@
+# deep-learning-challenge
+
+Adolfo Linarez
+University of Minnesota Data Sciences Bootcamp, Module 21 Challenge
+
+Neural Network Model Report
+
+## Overview
+The objective of this challenge is to develop a deep learning model capable of aiding in the selection of funding recipients with the highest probability of achieving success in their endeavors for Alphabet Soup, a non-profit organization associated with Applebet. Python, specifically in a Jupyter Notebook environment, is employed for this task. By utilizing a dataset's attributes, we construct a binary classifier that predicts the potential success of applicants sponsored by Alphabet Soup.
+
+- Step 1: Preprocess the Data
+    - Targets: IS_SUCCESSFUL
+    - Features: APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT
+    - Removed: EIN, NAME
+
+- Step 2: Compile, Train, and Evaluate the Model
+    - 1st Hidden Layer: 80 neurons, relu
+    - 2nd Hidden Layer: 30 neurons, relu
+    - Output Layer: 1 neuron, sigmoid
+    - Number of Features: 43
+    - Accuracy: 73.0%
+
+- Step 3: Optimize the Model
+    - 1st Hidden Layer: 150 neurons, relu
+    - 2nd Hidden Layer: 100 neurons, relu
+    - 3rd Hidden Layer: 50 neurons, relu
+    - 4th Hidden Layer: 25 neurons, tanh
+    - Output Layer: 1 neuron, sigmoid
+    - Number of Features: 104
+    - Accuracy: 76.1%
+
+## Results
+In the optimized model, the feature set expanded from 43 to 104 through the incorporation of the "NAME" attribute. Furthermore, the model was enhanced with an introduction of two extra hidden layers, resulting in a general augmentation in the number of neurons. Consequently, the accuracy experienced an enhancement from 73.0% to 76.1%, effectively surpassing the desired predictive accuracy threshold of 75%.
